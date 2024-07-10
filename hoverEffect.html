@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            /* position: relative; */
+        }
+
+        .cards .card {
+            width: 100%;
+            position: relative;
+        }
+
+        .cards .card .content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .cards .card .content::before,
+        .cards .card .content::after {
+            /* content: "";
+            width: 100%;
+            height: 100px;
+            background-color: #000;
+            position: absolute;
+            top: 0;
+            left: 0;
+        } */
+            content: "";
+            width: 100%;
+            height: 50%;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transition: all 0.5s;
+            opacity: 0;
+        }
+
+        .cards .card .content::before {
+            top: -20%;
+        }
+
+        .cards .card .content::after {
+            bottom: -20%;
+        }
+
+        .card:hover .content::before {
+            top: 0.3%;
+            opacity: 1;
+        }
+
+        .card:hover .content::after {
+            bottom: 0.3%;
+            opacity: 1;
+        }
+
+        .cards .card .box-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            z-index: 1;
+            color: #fff;
+            opacity: 0;
+            transform: rotate(90deg);
+            transition: all 0.5s;
+        }
+
+        .card:hover .box-content {
+            transform: rotate(0deg);
+            opacity: 1;
+        }
+
+        /* .cards .card .content::before {
+            top: -20%;
+        }
+
+        .cards .card .content::after {
+            bottom: -20%;
+        } */
+
+        .cards .card img {
+            width: 100%;
+        }
+
+        @media only screen and (min-width:768px) {
+            .cards .card {
+                width: 50%;
+            }
+        }
+
+        @media only screen and (min-width:1024px) {
+            .cards .card {
+                width: 33%;
+            }
+        }
+
+        @media only screen and (min-width:1200px) {
+            .cards .card {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="card">
+            <img src="./img/1-thumb.jpg" alt="">
+            <div class="content">
+                <div class="box-content">
+                    <h3>Abstraction</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit necessitatibus voluptatem,
+                        unde eos cum nesciunt architecto sapiente alias perferendis?</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="card">
+            <img src="./img/1-thumb.jpg" alt="">
+            <div class="content">
+                <h3>Abstraction</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit necessitatibus voluptatem,
+                    unde eos cum nesciunt architecto sapiente alias perferendis?</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/1-thumb.jpg" alt="">
+            <div class="content">
+                <h3>Abstraction</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit necessitatibus voluptatem,
+                    unde eos cum nesciunt architecto sapiente alias perferendis?</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/1-thumb.jpg" alt="">
+            <div class="content">
+                <h3>Abstraction</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit necessitatibus voluptatem,
+                    unde eos cum nesciunt architecto sapiente alias perferendis?</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/1-thumb.jpg" alt="">
+            <div class="content">
+                <h3>Abstraction</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit necessitatibus voluptatem,
+                    unde eos cum nesciunt architecto sapiente alias perferendis?</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/1-thumb.jpg" alt="">
+            <div class="content">
+                <h3>Abstraction</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit necessitatibus voluptatem,
+                    unde eos cum nesciunt architecto sapiente alias perferendis?</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/1-thumb.jpg" alt="">
+            <div class="content">
+                <h3>Abstraction</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit necessitatibus voluptatem,
+                    unde eos cum nesciunt architecto sapiente alias perferendis?</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/1-thumb.jpg" alt="">
+            <div class="content">
+                <h3>Abstraction</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam velit necessitatibus voluptatem,
+                    unde eos cum nesciunt architecto sapiente alias perferendis?</p>
+            </div>
+        </div> -->
+    </div>
+</body>
+
+</html>

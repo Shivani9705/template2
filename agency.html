@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c49906b727.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .agency{
+            background-color: rgb(31, 30, 30);
+        }
+        .agency .first{
+            text-align: center;
+            color: #fff;
+        }
+        .agency .second{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .agency .second .team{
+            position: relative;
+        }
+        
+        .agency .second .team img{
+            width: 100%;
+        }
+        .agency .second .content{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 80px;
+          left: 0;
+          display: flex;
+          flex-direction: column;
+          /* display: inline-block; */
+          justify-content: center;
+          align-items: center;
+          opacity: 0;
+          transition: 0.6s;
+        }
+        .agency .second .content:hover{
+            opacity: 1;
+        }
+        .agency .second .content h2{
+            /* border: 2px solid white; */
+            color: rgb(245, 185, 106);
+            font-family: "Dancing Script", cursive;
+            margin: 10px 0;
+        }
+        .agency .second .content p{
+            /* border: 2px solid white; */
+            color: rgb(194, 193, 193); 
+        }
+        .agency .second .team h4{
+            color: rgb(245, 185, 106);
+            font-family: "Dancing Script", cursive;
+            font-size: 25px;
+            text-align: center;
+            opacity: 1;
+        }
+        .agency .second .team:hover h4{
+            opacity: 0;
+        }
+        .agency .second .content .icon {
+            margin: 10px 0;
+            /* border: 2px solid white; */
+        }
+        .agency .second .content .line{
+            /* border: 2px solid white; */
+            margin-top: 50px;
+            width: 100%;
+            height: 1px;
+            background-color: rgb(245, 185, 106);
+        }
+        .agency .second .team .content .icon i{
+            color: rgb(245, 185, 106);
+            border: 2px solid rgb(245, 185, 106);
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .agency .second .content > h2{
+            transform: translateY(-40px);
+            transition: transform 0.5s;
+        }
+        .agency .second .content > h2{
+            transform: translateY(0px);
+        }
+        .agency .second .content > p,.agency .second .content > .icon{
+            transform: translateY(40px);
+            transition: transform 0.5s;
+        }
+        .content:hover > p{
+            transform: translateY(0px);
+        }
+        @media only screen and (min-width:768px)
+        {
+            .agency .second .team{
+                width: 50%;
+            }
+        }
+        @media only screen and (min-width:1024px)
+        {
+            .agency .second .team{
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="agency">
+        <div class="first">
+            <h1>Agency</h1>
+            <h4>Our team</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae quisquam consequuntur natus atque?
+                Illo recusandae,ullam doloribus. Provident.</p>
+        </div>
+        <div class="second">
+            <div class="team">
+                <img src="./img/1.jpg" alt="">
+                <h4>Clayton Rishardson</h4>
+                <div class="content">
+                    <h2>Creative Director</h2>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</p>
+                    <div class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="line"></div>
+                   
+                </div>
+            </div>
+            <div class="team">
+                <img src="./img/2.jpg" alt="">
+                <h4>Martha perry</h4>
+                <div class="content">
+                    <h2>Manager</h2>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</p>
+                    <div class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="team">
+                <img src="./img/3.jpg" alt="">
+                <h4>Jaylen Golden</h4>
+                <div class="content">
+                    <h2>Team Lead</h2>
+                    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit Lorem ipsum dolor sit amet.</p>
+                    <div class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

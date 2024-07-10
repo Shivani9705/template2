@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/masthead.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    text-align: center; 
+    padding: 10px 10px;
+   }
+   .home .content{
+    position: relative;
+    top: 8rem;
+   }
+   .home h1{
+    margin-bottom: 30px;
+    font-size: 55px;
+    color: white;
+   }
+   .cursive{
+    color: rgb(245, 185, 106);
+    font-family: "Dancing Script", cursive;
+   }
+   .home p{
+    margin-bottom: 30px;
+    color: gainsboro;
+    font-weight: bolder;
+   }
+   .home .line{
+    height: 5px solid #fff;
+    width: 50px;
+    background-color: #fff;
+ }
+ .home .line{
+   
+    /* border-radius: 2px solid; */
+    /* background-image: linear-gradient(to right, rgb(165, 121, 40) 60%,rgb(197, 188, 188) 40%); */
+    background-color: #fff;
+    width: 50%;
+    margin:10px auto;
+    height: 1px;
+ }
+ .home h5{
+    color: #fff;
+ }
+   .about
+   {
+      border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px 10px;
+   }
+   .about span{
+    color: rgb(245, 185, 106);
+    font-family: "Dancing Script", cursive;
+    font-size:65px;
+   }
+   .about .card h3{
+    margin: 10px;
+   }
+   .about .card p{
+    color: rgb(136, 130, 130);
+    margin: 10px;
+   }
+   .about .card h5{
+    color: rgb(245, 185, 106);
+   }
+
+   /* about end  */
+   .ratio{
+      border: 2px solid yellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+      padding: 20px 10px;
+      /* padding: 20px 10px; */
+   }
+   .ratio .content{
+      border: 2px solid;
+      width: 100%;
+   }
+   .ratio .image{
+      width: 100%;
+   }
+   .ratio .image img{
+      width: 100%;
+      display: none;
+     }
+   .ratio .line2{
+      /* border-radius: 2px solid; */
+    background-image: linear-gradient(to right, rgb(245, 185, 106) 60%,rgb(197, 188, 188) 40%);
+    background-color: red;
+    width: 100%;
+    height: 8px;
+     }
+     .ratio h4{
+      margin: 20px;
+     }
+     .words{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+      padding: 10px 10px;
+      background-color: black;
+      color: white;
+      text-align: center;
+     }
+     .words h1{
+      font-size: 50px;
+      font-weight: bolder;
+     }
+     .words p{
+      color: rgb(201, 198, 198);
+      
+     }
+     .words span{
+      color: rgb(245, 185, 106);
+      font-family: "Dancing Script", cursive;
+      font-size: 22px;
+      margin-top: 20px;
+      float: right;
+     }
+  /* words end  */
+  .creative{
+   display: flex;
+   flex-wrap: wrap;
+  }
+  .creative .image img{
+   width: 100%;
+   display: none;
+  }
+  .design{
+   
+   padding: 0px 15px;
+  }
+  .design .content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 30px 0;
+ }
+ .paragraph{
+   flex: 1;
+   text-align: left; /* Align paragraph text to the right */
+   line-height: 25px;
+   color: rgb(170, 168, 168);
+   font-size: 20px;
+ }
+ .icon {
+   width: 50px; 
+   height: 50px; 
+   /* Add any additional styling for your icon */
+ }
+
+ @media only screen and (min-width:1024px)
+ {
+   .card{
+      width:30%
+   }
+   .ratio .content{
+      width: 50%;
+   }
+   .ratio .image{
+      /* width: 50%; */
+      /* overflow: hidden; */
+   }
+   .ratio .image img{
+      /* width: 170%;
+      display: block; */
+     
+   }
+ }
+ @media only screen and (min-width:1200px)
+ {
+   .ratio .image{
+      width: 50%;
+      overflow: hidden;
+   }
+   .ratio .image img{
+      width: 125%;
+      display: block;
+     
+   }
+   .ratio .content{
+      width: 40%;
+   }
+   .ratio .image{
+      width: 50%;
+      
+   }
+ }

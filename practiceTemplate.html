@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <script src="https://kit.fontawesome.com/c49906b727.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .home {
+            /* border: 2px solid #000; */
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/masthead.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px 15px;
+        }
+
+        .home .content {
+            /* border: 2px solid #000; */
+            margin-top: 110px;
+
+        }
+
+        .home .content h1 {
+            /* border: 2px solid #fff; */
+            margin: 2% 0;
+            font-size: 50px;
+            color: #fff;
+        }
+
+        .home .content p {
+            /* border: 2px solid #fff; */
+            margin: 10px 0;
+            color: rgb(173, 173, 173);
+            font-size: 18px;
+        }
+
+        .home .content h4 {
+            /* border: 2px solid #fff; */
+            margin: 50px 0;
+            color: #fff;
+        }
+
+        .home .content h1 span {
+            /* border: 2px solid #fff; */
+            color: rgb(245, 185, 106);
+            font-family: "Dancing Script", cursive;
+        }
+
+
+        .about {
+            border: 2px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 50px 10px;
+        }
+
+        .about span {
+            color: rgb(245, 185, 106);
+            font-family: "Dancing Script", cursive;
+            font-size: 65px;
+        }
+
+        .about .card h3 {
+            margin: 10px;
+        }
+
+        .about .card p {
+            color: rgb(136, 130, 130);
+            margin: 10px;
+        }
+
+        .about .card h5 {
+            color: rgb(245, 185, 106);
+        }
+
+        .ratio {
+            border: 2px solid blue;
+            /* height: 60vh; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 0px 10px 10px;
+        }
+
+        .ratio .line {
+            width: 100%;
+            background: linear-gradient(to right, rgb(216, 169, 83) 60%, grey 40%);
+            height: 8px;
+        }
+        .ratio .right{
+            border: 2px solid;
+            width: 100%;
+            /* margin-top: 10px; */
+        }
+
+        .ratio .right img {
+            /* border: 2px solid; */
+            width: 100%;
+            display: none;
+        }
+
+        .ratio .left {
+            /* margin: 5px; */
+            border: 2px solid;
+            width: 100%;
+        }
+
+        .ratio .left h4 {
+            margin: 27px 0;
+        }
+
+        /* ratio end  */
+        .words {
+            border: 2px solid red;
+            height: 80vh;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+            background-color: black;
+            color: #fff;
+            align-items: center;
+            /* justify-content: center; */
+            padding: 10px 10px;
+        }
+
+        .words .head {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .words .para {
+            text-align: center;
+            font-size: 20px;
+            color: rgb(182, 175, 175);
+        }
+
+        .words .para span {
+            float: right;
+            color: rgb(245, 185, 106);
+            font-family: "Dancing Script", cursive;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        @media only screen and (min-width:768px) {
+
+            .words .head {
+                /* font-size: 25px; */
+                text-align: left;
+            }
+
+            .words .para {
+                text-align: left;
+                /* font-size: 20px; */
+            }
+        }
+
+        @media only screen and (min-width:1024px) {
+            .home .content {
+                width: 80%;
+            }
+
+            .card {
+                width: 30%
+            }
+            .ratio .left,.ratio .right{
+                width: 50%;
+                overflow: hidden;
+            }
+            .ratio .right img
+            {
+                width: 155%;
+                display: block;
+            }
+            .words .content{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .words .content .head{
+                padding-right: 10px;
+                text-align: right;
+            }
+            
+            .words .content .head,.words .content .para{
+                margin: 10px;
+                /* border: 2px solid white; */
+                width: 50%;
+            }
+        }
+
+        @media only screen and (min-width:1200px) {
+            .home .content {
+                width: 60%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home">
+        <div class="content">
+            <h1>Welcome to
+                <br><span>
+                    Silvana
+                </span>
+            </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ratione sapiente, quis vel repudiandae
+                praesentium consequatur magnam unde doloremque veritatis labore sit provident expedita laborum ipsum
+                .</p>
+            <h4>SEND REQUEST</h4>
+        </div>
+    </div>
+    <!-- homepage end  -->
+    <div class="about">
+        <div class="card">
+            <h3><span>P</span>hotography</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorum
+                officia beatae Lorem ipsum dolor sit amet. omnis Lorem ipsum dolor sit
+                amet. soluta iusto,
+            </p>
+            <h5>Read more</h5>
+        </div>
+        <div class="card">
+            <h3><span>A</span>dobe photoshop</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorum
+                officia Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. beatae
+                omnis soluta iusto,
+            </p>
+            <h5>Read more</h5>
+        </div>
+        <div class="card">
+            <h3><span>L</span>ogos</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolorum
+                officia Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. beatae
+                omnis soluta iusto,
+            </p>
+            <h5>Read more</h5>
+        </div>
+    </div>
+    <div class="ratio">
+        <div class="left">
+            <h4>PHOTOGRAPHY</h4>
+            <div class="line"></div>
+            <h4>ADOBE PHOTOSHOP</h4>
+            <div class="line"></div>
+            <h4>LOGOS</h4>
+            <div class="line"></div>
+        </div>
+        <div class="right">
+            <img src="./img/bg1.jpg" alt="">
+        </div>
+    </div>
+    <!-- RATIO END  -->
+    <div class="words">
+        <div class="content">
+            <div class="head">
+                <h1>A few words <br>about us</h1>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, qui sint non aspernatur laborum magni
+                    commodi
+                    perspiciatis tenetur quis cumque excepturi consectetur a accusantium et, quas mollitia beatae
+                    distinctio
+                    esse.
+                    <br> <span>Clayton Richardson</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- words end  -->
+    div
+</body>
+
+</html>

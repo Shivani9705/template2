@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .cards .card {
+            width: 100%;
+            position: relative;
+        }
+
+        .cards .content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            color: #fff;
+            /* font-size: 30px; */
+            text-align: center;
+            top: 0;
+            left: 0;
+        }
+
+        .cards .content::before,
+        .cards .content::after {
+            content: "";
+            width: 100%;
+            height: 50%;
+            background: url('./img/black.jpg');
+            /* color: white; */
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            transition: all 0.5s;
+           opacity: 0;
+
+        }
+
+        .cards .content::before {
+            top: -20%;
+        }
+
+        .cards .content::after {
+            bottom: -20%;
+        }
+        .cards .card:hover .content::before{
+            top: 0.3%;
+            opacity: 1;
+        }
+        .cards .card:hover .content::after{
+            bottom: 0.3%;
+            opacity: 1;
+        }
+
+        .cards .card img {
+            width: 100%;
+        }
+        .cards .card .box-content{
+            width: 100%;
+            height: 45px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
+            text-align: center;
+            transform: rotate(90deg);
+            opacity: 0;
+            transition: all 0.5s
+        }
+        .cards .card:hover .box-content{
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+
+        @media only screen and (min-width:768px) {
+            .cards .card {
+                width: 50%;
+            }
+        }
+
+        @media only screen and (min-width:1024px) {
+            .cards .card {
+                width: 33%;
+            }
+        }
+
+        @media only screen and (min-width:1200px) {
+            .cards .card {
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="card">
+            <img src="./img/1-thumb.jpg" alt="">
+            <div class="content">
+                <div class="box-content">
+                    <h4>Balloon</h4>
+                    <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nobis! sit amet
+                        consectetur adipisicing elit. Iusto, aut?</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/2-thumb.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="./img/3-thumb.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="./img/4-thumb.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="./img/5-thumb.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="./img/6-thumb.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="./img/7-thumb.jpg" alt="">
+        </div>
+        <div class="card">
+            <img src="./img/8-thumb.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

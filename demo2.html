@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image hover content</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            border: 2px solid;
+            width: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+        }
+        .content{
+            color: white;
+            background: rgba(0,0,0,0.6);
+            position: absolute;
+            top: 0;
+            width: 100%;
+            left:-100%;
+            height: 100%;
+            padding: 20px;
+            transition: 0.7s;
+        }
+        .box:hover .content{
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="img1.jpeg" alt="">
+        <div class="content">
+            <h3>Flower Rose</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio molestias, illum ipsam odit dolorum
+                pariatur repellendus ea tenetur laborum sequi doloremque quam amet labore perspiciatis, odio inventore
+                aut veritatis sint.Here we have a brick wall
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
